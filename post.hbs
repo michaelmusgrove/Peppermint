@@ -12,6 +12,7 @@
                 <h2 class="site-description">{{@blog.description}}</h2>
             </a>
         {{/if}}
+
 </header>
 
 <div id="primary" class="content-area">
@@ -36,7 +37,47 @@
                 </div><!-- .entry-content -->
 
                 <footer class="entry-meta">
-                </footer><!-- .entry-meta -->
+                <section class="author">
+            <h4 class="author-name">{{#if author.website}}<a class="author-website" href="{{author.website}}">{{/if}}{{author.name}}{{#if author.website}}</a>{{/if}}</h4>
+
+            {{#if author.bio}}<p class="author-bio">{{author.bio}}</p>{{/if}}
+
+            {{#if author.image}}<img alt="" class="author-image" src="{{author.image}}">{{/if}}
+
+            {{#if author.cover}}<img alt="" class="author-cover" src="{{author.cover}}">{{/if}}
+        </section>
+
+        <section class="share">
+            <h4>Share this post</h4>
+
+            <a class="share-twitter" href="http://twitter.com/share?text={{title}}&url={{url absolute='true'}}"
+                onclick="window.open(this.href, 'twitter-share', 'height=235,width=550'); return false"><span class="alt">Twitter</span></a>
+
+            <a class="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute='true'}}"
+                onclick="window.open(this.href, 'facebook-share','height=296,width=580'); return false"><span class="alt">Facebook</span></a>
+
+            <a class="share-google-plus" href="https://plus.google.com/share?url={{url absolute='true'}}"
+               onclick="window.open(this.href, 'google-plus-share', 'height=530,width=490'); return false"><span class="alt">Google+</span></a>
+        </section>
+        </footer><!-- .entry-meta -->
+        <!-- Disqus comments -->
+
+        <div class="comments">
+        <h4>Comments</h4>
+
+        <div id="disqus_thread">
+            <form onsubmit="loadDisqus(); return false">
+                <input type="submit" value="View comments">
+            </form>
+        </div>
+
+        <script>
+        var disqus_identifier = '{{id}}';
+        var disqus_url = '{{url absolute="true"}}';
+        </script>
+
+        <noscript>Please enable javascript to <a href="http://disqus.com/?ref_noscript" rel="nofollow">leave comments</a>.</noscript>
+    </div>
             </article>
 
         {{/post}}
