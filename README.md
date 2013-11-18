@@ -1,4 +1,4 @@
-##Peppermint- a Ghost Starter Theme Based on the popular 'Responsive' WordPress Theme.
+##Peppermint- a Ghost Starter Theme Based on the Popular 'Responsive' WordPress Theme.
  Includes:
  
  * Clean and minimal markup
