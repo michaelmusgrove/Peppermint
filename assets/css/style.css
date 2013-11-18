@@ -734,7 +734,7 @@ margin:0 auto;
 .site-description {
 	color: #afafaf;
 	display: block;
-	font-size: 0.875em; /* = 14px */
+	font-size: 1.875em;
 	font-family: 'Alice', serif;
 	margin: 10px 0;
 }
