@@ -541,40 +541,43 @@ h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h1 {
-	font-size: 2.625em; /* = 42px */
+	font-size: 4em;
 	margin-bottom: .5em;
 	margin-top: .5em;
 }
 
 h2 {
-	font-size: 2.250em; /* = 36px */
+	font-size: 3.25em;
 	margin-bottom: .75em;
 	margin-top: .75em;
 }
 
 h3 {
-	font-size: 1.875em; /* = 30px */
+	font-size: 1.875em;
+	font-size:30px;
 	margin-bottom: .857em;
 	margin-top: .857em;
 }
 
 h4 {
-	font-size: 1.500em; /* = 24px */
+	font-size: 1.65em;
 	margin-bottom: 1em;
 	margin-top: 1em;
 }
 
 h5 {
-	font-size: 1.125em; /* = 18px */
+	font-size: 1.5em;
 	margin-bottom: 1.125em;
 	margin-top: 1.125em;
 }
 
 h6 {
-	font-size: 1.000em; /* = 16px */
+	font-size: 1.125em;
+	font-size:18px;
 	margin-bottom: 1.285em;
 	margin-top: 1.285em;
 }
+
 
 /* =Margins & Paddings
 -------------------------------------------------------------- */
