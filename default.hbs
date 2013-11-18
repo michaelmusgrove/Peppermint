@@ -15,31 +15,41 @@
 
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com//c
-    css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lora|Oxygen:400,700' rel='stylesheet' type='text/css'>
+    <link href="/assets/css/post.css" rel="stylesheet">
 
-    {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
-</head>
+
+ </head>
 <body class="{{body_class}}">
     <div id="page" class="hfeed site">
 
-            {{! Everything else gets inserted here }}
+
             {{{body}}}
 
         <footer id="colophon" class="site-footer" role="contentinfo">
-
+          <a class="site-subscribe" href="{{@blog.url}}/rss">Sign Up!</a>
             <div class="site-info">
                 Proudly published with <a class="icon-ghost" href="http://tryghost.org">Ghost</a>
             </div><!-- .site-info -->
         </footer><!-- #colophon -->
     </div><!-- #page -->
 
-    {{! Ghost outputs important scripts and data with this tag }}
+
     {{ghost_foot}}
-
-    {{! The main JavaScript file for Peppermint }}
+    <script type="text/javascript">
+        $('.site-title').textArch({
+            fullCircle: true,
+            radius: 200,
+            angleBetweenLetters : 10,
+            fitTextToPath : true,
+            startAngle : 0,
+            inside : false,
+            yScale : 1,
+            fontScale : 1
+        });
+    </script>
     <script type="text/javascript" src="/assets/js/index.js"></script>
-
 </body>
 </html>
