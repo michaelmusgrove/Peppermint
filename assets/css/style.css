@@ -901,6 +901,15 @@ margin:0 auto;
 	text-align: center;
 }
 
+/* =Social Share
+-------------------------------------------------------------- */
+.share{
+	text-align: center;
+}
+.share a{
+	margin-right:10px;
+}
+
 /* =Symbols
 -------------------------------------------------------------- */
 .ellipsis {
