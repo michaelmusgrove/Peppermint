@@ -85,7 +85,7 @@ body {
 -webkit-font-smoothing: antialiased;
 background: #efefef;
 color: #141414;
-font-family: Arial, Helvetica, sans-serif;
+font-family: 'Alice', serif;
 font-size: 18px;
 font-size: 0.8em;
 font-smoothing: antialiased;
@@ -336,7 +336,7 @@ svg:not(:root) {
 /* =Links
 -------------------------------------------------------------- */
 a {
-	color: #0066cc;
+	color: #c11515;
 	font-weight: 400;
 	text-decoration: none;
 }
@@ -520,7 +520,7 @@ blockquote {
 }
 
 blockquote p {
-	font-family: 'Georgia', 'Times New Roman', Times, serif;
+	font-family: 'Verdana', sans-serif;
 	font-style: italic;
 	font-size: 18px;
 	line-height: 26px;
@@ -529,6 +529,7 @@ blockquote p {
 /* =Headings
 -------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	font-family: 'Oxygen', sans-serif;
 	font-weight: 700;
 	line-height: 1.0em;
 	word-wrap: break-word;
@@ -707,6 +708,7 @@ form div {
 .site-name {
 	display: block;
 	font-size: 2.063em; /* = 33px */
+	font-family: 'Oxygen', sans-serif;
 	line-height: 1.0em;
 	padding-top: 20px;
 }
@@ -720,6 +722,7 @@ form div {
 	color: #afafaf;
 	display: block;
 	font-size: 0.875em; /* = 14px */
+	font-family: 'Alice', serif;
 	margin: 10px 0;
 }
 
@@ -2308,7 +2311,7 @@ a.black:hover {
 }
 
 #breadcrumb a {
-	color: #0066cc;
+	color: #c11515;
 	font-size: 12px;
 	font-weight: 400;
 }
