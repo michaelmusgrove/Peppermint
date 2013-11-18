@@ -60,25 +60,35 @@
                onclick="window.open(this.href, 'google-plus-share', 'height=530,width=490'); return false"><span class="alt">Google+</span></a>
         </section>
         </footer><!-- .entry-meta -->
-        <!-- Disqus comments -->
+          <section class="comment">
 
+      <!--Google plus commenting system. If you'd rather have Disqus, get rid of this code, and remove the commenting brackets from the code below-->
+      <div class="g-comments" data-href="{{@blog.url}}{{url}}" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD">Loading Google+ Comments ...
+      </div>
+      <script async type="text/javascript" src="//apis.google.com/js/plusone.js?callback=gpcb">
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://plus.google.com/">comments powered by Google+.</a>
+      </noscript>
+      </section>
+
+
+        <!-- Disqus comments
         <div class="comments">
         <h4>Comments</h4>
-
         <div id="disqus_thread">
             <form onsubmit="loadDisqus(); return false">
                 <input type="submit" value="View comments">
             </form>
         </div>
-
         <script>
         var disqus_identifier = '{{id}}';
         var disqus_url = '{{url absolute="true"}}';
         </script>
-
         <noscript>Please enable javascript to <a href="http://disqus.com/?ref_noscript" rel="nofollow">leave comments</a>.</noscript>
-    </div>
-            </article>
+        </div>-->
+
+
+         </article>
 
         {{/post}}
 
