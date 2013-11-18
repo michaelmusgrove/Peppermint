@@ -95,6 +95,13 @@ width: 940px;
 margin: 2% auto;
 }
 
+.home-template {
+width: 650px;
+margin: 0 auto;
+padding: 2%;
+line-height: 1.625;
+}
+
 /* =Typography
 -------------------------------------------------------------- */
 p {
